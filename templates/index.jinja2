@@ -6,13 +6,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
-    <title>Cover Template for Bootstrap</title>
+    <title>#TeruelResiste</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="./css/cover.css" rel="stylesheet">
+    <script type="text/javascript">
+    $('#myModal').modal('show');
+    </script>
+
   </head>
 
   <body class="text-center">
@@ -20,37 +24,90 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">Cover</h3>
+          <h3 class="masthead-brand">#TeruelResiste</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link active" href="#">Inicio</a>
+            <a class="nav-link" href="#">Noticias</a>
+            <a class="nav-link" href="#">Acciones</a>
+            <a class="nav-link" href="#">Contacto</a>
           </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">aaaa</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+              <h1 class="cover-heading">Ya somos {{ count }} personas luchando por Teruel.</h1>
+        <p class="lead">#TeruelResiste es un movimiento que resulta del abandono en el que las sucesivas administraciones nos han dejado. Una provincia olvidada tanto desde la DGA como desde el Gobierno Central, en la cual las carreteras tienen un nivel casi tan alto de desarrollo como las lineas ferreas. Una provincia que quieren hacer desaparecer con la despoblacion y la nula inversion, dejandonos sin futuro y obligandonos a emigrar.</p>
         <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+          <button  class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#myModal">Firma y unete</button>
         </p>
       </main>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          <p>Por unos pueblos vivos y una vida digna</p>
         </div>
       </footer>
     </div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="background-color: #878787">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×</button>
+
+            </div>
+
+
+<div class="modal-body">
+        <div class="row centered-form" style="display: -webkit-box">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4" style="max-width: 100%">
+                <div class="panel panel-default">
+        		<div class="panel-heading">
+			    		<h3 class="panel-title" style="margin-top: 0;margin-bottom: 3rem;font-size: 3rem;">Unete y participa</h3>
+			 			</div>
+			 			<div class="panel-body">
+			    		<form role="form">
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			                <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="Nombre">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Apellidos">
+			    					</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="form-group">
+			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Direccion Email">
+			    			</div>
+
+
+                                                </div>
+
+			    			<input type="submit" value="Register" class="btn btn-info btn-block">
+
+			    		</form>
+			    	</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+        </div>
+    </div>
+</div>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
 
